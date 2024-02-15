@@ -4,6 +4,7 @@
 
 # Home page
 GET        /                             controllers.Application.index
+GET        /groupTask1                   controllers.groupTask1.index
 
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
