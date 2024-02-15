@@ -8,7 +8,7 @@ import play.api.mvc._
 class groupTask1 @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
   def index = Action {
-    Ok("It works")
+    Ok(views.html.groupTask1("We in task1 group"))
   }
 
 }
