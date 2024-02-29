@@ -6,6 +6,9 @@
 GET        /                             controllers.Application.index
 GET        /groupTask1                   controllers.groupTask1.index
 
+
+GET     /validate1                      controllers.Login.valdiateLoginGet(name,favcolor)
+
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
 GET        /versionedAssets/*file        controllers.Assets.versioned(path="/public", file: Asset)
