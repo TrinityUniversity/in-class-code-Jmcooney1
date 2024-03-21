@@ -5,9 +5,11 @@
 # Home page
 GET        /                             controllers.Application.index
 GET        /groupTask1                   controllers.groupTask1.index
+GET        /Login                        controllers.Login.login
 
 
-GET     /validate1                      controllers.Login.valdiateLoginGet(name,favcolor)
+GET     /validateLogin1Get                      controllers.Login.valdiateLogin1Get(name,favcolor)
+POST     /valdiateLogin2Post                      controllers.Login.valdiateLogin2Post(username)
 
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
