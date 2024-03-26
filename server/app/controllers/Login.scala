@@ -18,8 +18,8 @@ class Login @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
     val postVals = request.body.asFormUrlEncoded
     postVals.map {args =>
       val username = args("username").head
-    Ok(s"username:$username")
-    }.getOrElse(Ok("oops"))
+    Redirect(routes.TaskList1.GroupTask1())
+    }.getOrElse(Redirect(routes.TaskList1.login2()))
   }
   
 

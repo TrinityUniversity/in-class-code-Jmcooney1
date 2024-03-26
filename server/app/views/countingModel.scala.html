@@ -1,0 +1,20 @@
+@(message: String)
+
+@main("Play with Scala.js") {
+
+  <h2>Random Stock stuff</h2>
+  <ul>
+    <li>Play shouts out: <em>@message</em></li>
+    <li>Scala.js shouts out: <em id="scalajsShoutOut"></em></li>
+  </ul>
+  <form method = "get", action = "validateLogin1Get">
+    <label for="name">Name:</label><br>
+    <input type = "text" id="name" name = "name"><br>
+    <label for="favcolor"> Color:</label><br>
+    <input type = "text" id = "favcolor" name = "favcolor"><br><br>
+    <input type = "submit" value = "Submit">
+  </form>
+
+  
+
+  <div id="root"></div>
