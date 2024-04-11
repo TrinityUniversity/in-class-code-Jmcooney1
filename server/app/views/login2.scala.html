@@ -3,7 +3,7 @@
 @main("Play with Scala.js") {
 
   <h2>Username</h2>
-  <form method = "post" action = "valdiateLogin2Post">
+  <form method = "post" action = @routes.Login.valdiateLogin2Post >
     <label for="username">Username:</label><br>
     <input type = "text" id="username" name = "username"><br>
     <input type = "submit" value = "Submit">

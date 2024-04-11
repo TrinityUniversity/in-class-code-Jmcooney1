@@ -22,5 +22,9 @@ class Login @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
     }.getOrElse(Redirect(routes.TaskList1.login2()))
   }
   
+  def tasklist = Action{
+    val tasks = List("task1","task2","task3","sleep","eat")
+    Ok(views.html.taskList1.tasklist)
+  }
 
 }
